@@ -5,7 +5,7 @@ namespace ConsoleGame
     public struct CharacterStatus {
         
         int id;
-        string name;        
+        public string name;        
         int hp;
         int mp;
         int str;

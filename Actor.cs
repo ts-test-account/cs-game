@@ -6,7 +6,7 @@ namespace ConsoleGame
 {
     public class Actor
     {
-        CharacterStatus status;
+        public CharacterStatus status;
         
         //デフォルトコンストラクタ
         public Actor()

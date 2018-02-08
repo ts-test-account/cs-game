@@ -21,9 +21,9 @@ namespace ConsoleGame
             foreach(var item in query)
                 Console.WriteLine(item);
                 
-            Actor actor = new Actor();
+            Actor actor = new Actor(CharacterStatusData.monsterdata[1]);
             actor.TestMethod();
-            
+            Console.WriteLine(actor.status.name);
         }
     }
 }
