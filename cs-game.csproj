@@ -46,6 +46,7 @@
     <Compile Include="CharacterList.cs" />
     <Compile Include="CharacterStatus.cs" />
     <Compile Include="CharacterStatusData.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>

@@ -8,16 +8,15 @@ namespace ConsoleGame
     {
         static public void Main ()
         {       
-            Actor actor = new Actor(CharacterStatusData.monsterdata[1]);
-            actor.TestMethod();
-            Console.WriteLine(actor.status.name);
-
-            Actor actor2 = new Actor(CharacterStatusData.monsterdata[0]);
-            CharacterList.AddCharacter(actor2);
+            Actor actor = new Actor(CharacterStatusData.monsterdata[0]);
+            CharacterList.AddCharacter(actor);
             Console.WriteLine(CharacterList.characterlist[0].status.name);
 
             //—”‚ÌƒeƒXƒg
             Console.WriteLine(Utility.GetRandom());
+
+            CharacterList.AddSpecifyCharacter();
+            Console.WriteLine(CharacterList.characterlist[1].status.name);
         }
     }
 }
