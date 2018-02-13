@@ -35,6 +35,12 @@ namespace ConsoleGame{
             }
         }
 
+        //ランダムなモンスターを1体追加
+        static public void AddRandomMonster()
+        {
+
+        }
+
     }
     
 }

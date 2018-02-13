@@ -8,14 +8,12 @@ namespace ConsoleGame
     {
         static public void Main ()
         {       
-            Actor actor = new Actor(CharacterStatusData.monsterdata[0]);
-            CharacterList.AddCharacter(actor);
-            Console.WriteLine(CharacterList.characterlist[0].status.name);
-
             //乱数のテスト
             Console.WriteLine(Utility.GetRandom());
 
-            CharacterList.AddSpecifyCharacter();
+            //初期キャラクターを追加
+            CharacterList.AddIntialCharacter();
+            //リストの2番目のキャラクタの名前を表示
             Console.WriteLine(CharacterList.characterlist[1].status.name);
         }
     }
