@@ -7,23 +7,17 @@ namespace ConsoleGame
     public class Program
     {
         static public void Main ()
-        {
-            Console.WriteLine ("Hello Mono World");
-            string[] names = {"Tokyo", "New Delhi", "Bangkok", "London", "Paris", "Berlin", "Canberra"};
-            var query = names.Where(s => s.Length <= 5);
-            
-            foreach (var item in query)
-                Console.WriteLine(item);
-            Console.WriteLine("----");
-            
-            names[0] = "Osaka";
-            
-            foreach(var item in query)
-                Console.WriteLine(item);
-                
+        {       
             Actor actor = new Actor(CharacterStatusData.monsterdata[1]);
             actor.TestMethod();
             Console.WriteLine(actor.status.name);
+
+            Actor actor2 = new Actor(CharacterStatusData.monsterdata[0]);
+            CharacterList.AddCharacter(actor2);
+            Console.WriteLine(CharacterList.characterlist[0].status.name);
+
+            //—”‚ÌƒeƒXƒg
+            Console.WriteLine(Utility.GetRandom());
         }
     }
 }

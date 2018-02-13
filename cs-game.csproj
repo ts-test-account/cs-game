@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actor.cs" />
+    <Compile Include="CharacterList.cs" />
     <Compile Include="CharacterStatus.cs" />
     <Compile Include="CharacterStatusData.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".git\config" />

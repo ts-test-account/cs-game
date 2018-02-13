@@ -10,7 +10,7 @@ namespace ConsoleGame{
 			RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
 			byte[] bs = new byte[sizeof(UInt32)];
 			rng.GetBytes(bs);
-			int iR = System.BitConverter.ToUInt32(bs, 0);
+			UInt32 iR = System.BitConverter.ToUInt32(bs, 0);
 			return ((double)iR / UInt32.MaxValue);
 		}
 	}
