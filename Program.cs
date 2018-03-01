@@ -9,13 +9,15 @@ namespace ConsoleGame
         static public void Main ()
         {       
             //乱数のテスト
-            Console.WriteLine(Utility.GetRandom());
+            Console.WriteLine(Utility.GetRandom01());
+            Console.WriteLine(Utility.GetSelectedRandom(0, 10));
 
             //初期キャラクターを追加
             CharacterList.AddIntialCharacter();
             //リストの2番目のキャラクタの名前を表示
             Console.WriteLine(CharacterList.characterlist[1].status.name);
+
         }
     }
 }
-
+ 

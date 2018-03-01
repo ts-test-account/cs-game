@@ -38,7 +38,7 @@ namespace ConsoleGame{
         //ランダムなモンスターを1体追加
         static public void AddRandomMonster()
         {
-
+            AddCharacter(Utility.GetSelectedRandom(0, Constants.NumberOfTypesOfMonster));
         }
 
     }
