@@ -4,6 +4,8 @@ using System.Collections.Generic;
 namespace ConsoleGame{
 
     static public class CharacterList{
+
+        //キャラクターを格納するリスト
         static public List<Actor> characterlist = new List<Actor>();
 
         //Actorの追加
@@ -29,6 +31,7 @@ namespace ConsoleGame{
         //初期キャラクタを追加
         static public void AddIntialCharacter()
         {
+            Console.WriteLine("初期キャラクタを3人選んで下さい。");
             for (int i = 0; i < Constants.NumberOfInitialCharacter; i++)
             {
                 AddSpecifyCharacter();
@@ -41,6 +44,14 @@ namespace ConsoleGame{
             AddCharacter(Utility.GetSelectedRandom(0, Constants.NumberOfTypesOfMonster));
         }
 
+        //指定数のモンスターを追加
+        static public void AddMultipleMonster(int number)
+        {
+            for (int i = 0; i < number; i++)
+            {
+                AddRandomMonster();
+            }
+        }
     }
     
 }
